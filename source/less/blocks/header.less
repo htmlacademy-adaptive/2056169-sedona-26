@@ -1,0 +1,19 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+    height: 56px;
+  }
+
+  @media (min-width: @desktop-width) {
+    flex-direction: row;
+    height: 56px;
+  }
+}
+
+.header__logo {
+  margin: 0 auto;
+}

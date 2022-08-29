@@ -1,0 +1,25 @@
+.page-form {
+  text-transform: uppercase;
+}
+
+.page-form__title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 26px;
+  text-align: center;
+}
+
+.page-form__description {
+  color: @color-night-rider;
+  text-align: center;
+}
+
+.page-form__form-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+  }
+}
