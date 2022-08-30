@@ -15,6 +15,35 @@
   text-align: center;
 }
 
+.catalog__item-wrapper {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 324px);
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: grid;
+    grid-template-columns: repeat(3, 400px);
+    margin: 0 auto;
+    padding: 0;
+  }
+}
+
+.catalog__item--main {
+  @media (min-width: @tablet-width) {
+    grid-column: span 2;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-column: span 3;
+  }
+}
+
 .catalog__item {
   background-color: @color-white-smoke;
 }
