@@ -11,9 +11,17 @@
 }
 
 .presentation__description {
-  font-weight: 700;
-  font-size: 21px;
-  line-height: 26px;
+  font-size: 14px;
+  line-height: 21px;
   color: @color-night-rider;
   text-transform: uppercase;
+}
+
+.presentation__img {
+  object-fit: cover;
+  width: 100%;
+
+  @media (min-width: @desktop-width) {
+    max-width: 800px;
+  }
 }

@@ -4,7 +4,11 @@
   background-position: bottom;
   background-color: @color-gainsboro;
   background-repeat: no-repeat;
-  background-size: 100% auto;
+  background-size: cover;
+
+  @media (min-width: @tablet-width) {
+    background-size: contain, cover;
+  }
 }
 
 .intro__logo {

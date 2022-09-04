@@ -19,6 +19,7 @@
 .advantages__list {
   display: flex;
   flex-direction: column;
+  list-style: none;
 
   @media (min-width: @tablet-width) {
     flex-direction: row;
@@ -42,4 +43,13 @@
 
 .advantages__list-item--bg-grey {
   background: @color-whisper;
+}
+
+.advantages__block-img {
+  object-fit: cover;
+  width: 100%;
+
+  @media (min-width: @desktop-width) {
+    max-width: 800px;
+  }
 }
