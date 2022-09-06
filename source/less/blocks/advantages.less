@@ -6,7 +6,15 @@
   text-transform: uppercase;
 
   @media (min-width: @tablet-width) {
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+
+  &--reverse {
+    @media (min-width: @tablet-width) {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+    }
   }
 }
 
@@ -20,9 +28,12 @@
   display: flex;
   flex-direction: column;
   list-style: none;
+  margin: 0;
+  padding: 0;
 
   @media (min-width: @tablet-width) {
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
 
