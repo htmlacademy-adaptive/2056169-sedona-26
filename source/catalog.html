@@ -3,102 +3,106 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Фото и видео</title>
   <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body class="page__body">
-  <header class="header">
-    <a class="header__logo">
-      <img class="header__logo-image" src="/img/svg/logo.svg" width="185" height="96" alt="Логотип «Седона»." />
-    </a>
-    <nav class="header__nav main-nav">
-      <button class="main-nav__toggle" type="button">
-        <span class="visually-hidden">Oткрыть/закрыть меню</span>
-      </button>
-      <ul class="main-nav__list">
-        <li class="main-nav__item">
-          <a class="main-nav__link" href="index.html"> Главная </a>
-        </li>
-        <li class="main-nav__item">
-          <a class="main-nav__link main-nav__link--current"> Фото и видео </a>
-        </li>
-        <li class="main-nav__list-item">
-          <a class="main-nav__link" href="form.html"> Форма отзыва </a>
-        </li>
-        <li class="main-nav__item">
-          <a class="main-nav__link" href="#"> Html Academy </a>
-        </li>
-      </ul>
-    </nav>
-  </header>
+  <div class="page__body-wrapper">
+    <header class="header">
+      <a class="header__logo">
+        <img class="header__logo-image" src="/img/svg/logo.svg" width="185" height="96" alt="Логотип «Седона»." />
+      </a>
+      <nav class="header__nav main-nav">
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Oткрыть/закрыть меню</span>
+        </button>
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="index.html"> Главная </a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link main-nav__link--current"> Фото и видео </a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="form.html"> Форма отзыва </a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#"> Html Academy </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main-container">
+      <section class="intro intro--inner">
+        <h1 class="visually-hidden">Каталог фотографий</h1>
+        <img class="intro__logo" src="/img/svg/sedona.svg" width="229" height="39"
+          alt="Welcome to the gorgeus sedona «because the Grand Canyon sucks!»" />
+      </section>
 
-  <main class="main-container">
-    <section class="intro intro--inner">
-      <h1 class="visually-hidden">Каталог фотографий</h1>
-      <img class="intro__logo" src="/img/svg/sedona.svg" width="229" height="39"
-        alt="Welcome to the gorgeus sedona «because the Grand Canyon sucks!»" />
-    </section>
+      <section class="catalog">
+        <h2 class="catalog__title ">Фото и видео</h2>
+        <p class="catalog__description">Не можете решиться на путешествие
+          из-за курса? Фотографии помогут вам забыть о политике и экономике.
+        </p>
+        <figure class="catalog__item catalog__item--main">
+          <img class="catalog__item-photo" src="/img/content/photo-desktop-1.jpg" alt="Неродные просторы." />
+          <figcaption class="catalog__item-group">
+            <p class="catalog__item-title">Неродные просторы</p>
+            <p class="catalog__item-description">Автор фото: Борис</p>
+            <button class="catalog__button" type="button"></button>
+            <span class="catalog__like">1350</span>
+          </figcaption>
+        </figure>
 
-    <section class="catalog">
-      <h2 class="catalog__title ">Фото и видео</h2>
-      <p class="catalog__description">Не можете решиться на путешествие
-        из-за курса? Фотографии помогут вам забыть о политике и экономике.
-      </p>
+        <div class="catalog__item-wrapper">
+          <figure class="catalog__item">
+            <img class="catalog__item-photo" src="/img/content/photo-desktop-2.jpg" alt="Местная растительность." />
+            <figcaption class="catalog__item-group">
+              <p class="catalog__item-title">Местная растительность</p>
+              <p class="catalog__item-description">Автор фото: Сергей</p>
+              <button class="catalog__button" type="button"></button>
+              <span class="catalog__like">143</span>
+            </figcaption>
+          </figure>
+          
 
-      <figure class="catalog__item catalog__item--main">
-        <img src="/img/content/photo-desktop-1.jpg" width="280" height="280" alt="Неродные просторы." />
-        <figcaption>
-          <p class="catalog__item-title">Неродные просторы</p>
-          <p class="catalog__item-description">Автор фото: Борис</p>
-          <button class="catalog__button" type="button"></button>
-          <span class="catalog__like">1350</span>
-        </figcaption>
-      </figure>
+          <figure class="catalog__item">
+            <img class="catalog__item-photo" src="/img/content/photo-desktop-3.jpg" alt="Дорога на север." />
+            <figcaption class="catalog__item-group">
+              <p class="catalog__item-title">Дорога на север</p>
+              <p class="catalog__item-description">Автор фото: Петр</p>
+              <button class="catalog__button" type="button"></button>
+              <span class="catalog__like">96</span>
+            </figcaption>
+          </figure>
 
-      <figure class="catalog__item">
-        <img src="/img/content/photo-desktop-2.jpg" width="280" height="280" alt="Местная растительность." />
-        <figcaption>
-          <p class="catalog__item-title">Местная растительность</p>
-          <p class="catalog__item-description">Автор фото: Сергей</p>
-          <button class="catalog__button" type="button"></button>
-          <span class="catalog__like">143</span>
-        </figcaption>
-      </figure>
-
-      <figure class="catalog__item">
-        <img src="/img/content/photo-desktop-3.jpg" width="280" height="280" alt="Дорога на север." />
-        <figcaption>
-          <p class="catalog__item-title">Дорога на север</p>
-          <p class="catalog__item-description">Автор фото: Петр</p>
-          <button class="catalog__button" type="button"></button>
-          <span class="catalog__like">96</span>
-        </figcaption>
-      </figure>
-
-      <figure class="catalog__item">
-        <img src="/img/content/photo-desktop-4.jpg" width="280" height="280" alt="Мост дьявола." />
-        <figcaption>
-          <p class="catalog__item-title">Мост Дьявола</p>
-          <p class="catalog__item-description">Автор фото: Антон</p>
-          <button class="catalog__button" type="button"></button>
-          <span class="catalog__like">254</span>
-        </figcaption>
-      </figure>
-    </section>
-    <section class="presentation">
-      <h2 class="presentation__title">Все еще сомневаетесь?</h2>
-      <p class="presentation__description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в
-        очередной раз!</p>
-      <div class="presentation__video-block">
-        <button class="presentation__play-btn" type="button"></button>
-        <img class="presentation__img" src="/img/content/video-desktop.jpg" width="280" height="177"
-          alt="Видеопрезентация.">
-      </div>
-    </section>
+          <figure class="catalog__item">
+            <img class="catalog__item-photo" src="/img/content/photo-desktop-4.jpg"  alt="Мост дьявола." />
+            <figcaption class="catalog__item-group">
+              <p class="catalog__item-title">Мост Дьявола</p>
+              <p class="catalog__item-description">Автор фото: Антон</p>
+              <button class="catalog__button" type="button"></button>
+              <span class="catalog__like">254</span>
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+      <section class="presentation">
+        <h2 class="presentation__title">Все еще сомневаетесь?</h2>
+        <p class="presentation__description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в
+          очередной раз!</p>
+        <div class="presentation__video-block">
+          <button class="presentation__play-btn" type="button"></button>
+          <img class="presentation__img" src="/img/content/video-desktop.jpg" width="280" height="177"
+            alt="Видеопрезентация.">
+        </div>
+      </section>
+    </main>
     <footer class="footer">
       <div class="footer__wrapper">
-        <span class="footer__hash">#visitsedona</span>
+        <span class="footer__hash"></span>
 
         <div class="footer__social social">
           <ul class="social__list">
@@ -117,7 +121,7 @@
                     </clipPath>
                   </defs>
                 </svg>
-                Мы в Вконтакте
+                <span class="visually-hidden">Мы в Вконтакте</span>
               </a>
             </li>
             <li class="social__item">
@@ -128,7 +132,7 @@
                     d="M34.4393 16.6223L31.2705 31.566C31.0313 32.6205 30.408 32.883 29.5223 32.3865L24.6938 28.8285L22.3643 31.0695C22.1063 31.3275 21.891 31.5428 21.3938 31.5428L21.741 26.6258L30.6893 18.54C31.0785 18.1935 30.6045 18.0008 30.0848 18.348L19.0223 25.314L14.2598 23.823C13.224 23.4998 13.2053 22.7873 14.4758 22.29L33.1035 15.1133C33.966 14.79 34.7205 15.3053 34.4393 16.623V16.6223Z"
                     fill="white" />
                 </svg>
-                Мы в Телеграме
+                <span class="visually-hidden">Мы в Телеграме</span>
               </a>
             </li>
             <li class="social__item">
@@ -139,7 +143,7 @@
                     d="M31.1813 17H16.8133C15.3062 17 14 18.3 14 19.8V28.1C14 29.7 15.3062 31 16.8133 31H31.1813C32.7889 31 33.9946 29.7 33.9946 28.2V19.8C34.095 18.3 32.7889 17 31.1813 17ZM21.0333 27.4V20.6L27.8656 24L21.0333 27.4Z"
                     fill="white" />
                 </svg>
-                Мы в Ютубе
+                <span class="visually-hidden">Мы в Ютубе</span>
               </a>
             </li>
           </ul>
@@ -154,6 +158,5 @@
         </a>
       </div>
     </footer>
-
-  </main>
+  </div>
 </body>

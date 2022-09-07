@@ -1,7 +1,12 @@
+.form__list {
+  list-style: none;
+}
+
 .form__title {
   font-weight: 700;
   font-size: 21px;
   line-height: 26px;
+  margin: 0 auto;
 }
 
 .form__label {
@@ -14,6 +19,7 @@
   background-position: center;
   width: 16px;
   height: 12px;
+  background-color: @color-form-whisper;
 }
 
 .form__input-mail-icon {
@@ -22,14 +28,72 @@
   background-position: center;
   width: 18px;
   height: 18px;
+  background-color: @color-form-whisper;
 }
 
 .form__field {
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
+  background-color: @color-white-smoke;
+  font-family: inherit;
+}
+
+.form__submit-block {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 768px;
+    margin: 0 auto;
+  }
 }
 
 .form__submit-description {
   color: @color-night-rider;
+}
+
+.form__wrapper {
+  display: flex;
+  justify-content: center;
+  border: none;
+  margin-bottom: 40px;
+}
+
+.form__field--textarea {
+  resize: none;
+}
+
+.form__list--form-radio {
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0 auto;
+    column-gap: 50px;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0 auto;
+    column-gap: 60px;
+  }
+}
+
+.form__list--form-checkbox {
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0 auto;
+    column-gap: 84px;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 0 auto;
+    column-gap: 60px;
+  }
 }

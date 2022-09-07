@@ -1,6 +1,19 @@
 .footer__hash {
   background-image: url("../img/svg/visit-sedona.svg");
   background-repeat: no-repeat;
-  background-size: 100% auto;
+  height: 26px;
+  width: 166px;
 }
 
+.footer__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 960px;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}

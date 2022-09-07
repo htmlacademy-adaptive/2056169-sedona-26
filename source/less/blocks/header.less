@@ -1,3 +1,22 @@
 .header {
+  display: flex;
+  flex-direction: column;
   text-transform: uppercase;
+  position: relative;
+  padding: 18px 0;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+  }
+}
+
+.header__logo {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.header__nav {
+  width: 100%;
 }
