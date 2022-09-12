@@ -1,13 +1,28 @@
 .social__list {
   display: flex;
+  justify-content: space-between;
   list-style: none;
+  padding: 0;
 }
 
 .social__link {
   color: #000000;
   text-decoration: none;
+  fill: @color-seagull;
 }
 
 .social__item {
   margin-right: 6px;
+}
+
+.social__link:hover {
+  fill: @color-shakespeare;
+}
+
+.social__link:active {
+  fill: @color-shakespeare-down;
+}
+
+.social__link:disabled {
+  cursor: default;
 }

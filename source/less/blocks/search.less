@@ -5,12 +5,27 @@
 
 .search__title {
   font-weight: 700;
-  font-size: 30px;
-  line-height: 26px;
+  font-size: 21px;
+  padding: 0 20px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 30px;
+    line-height: 26px;
+  }
 }
 
 .search__description {
   color: @color-night-rider;
+  padding: 0 20px;
+  margin-bottom: 32px;
+}
+
+.search__button {
+  padding: 14px 49px;
+
+  @media (min-width: @tablet-width) {
+    padding: 16px 121px;
+  }
 }
 
 .search__map {
@@ -18,4 +33,5 @@
   height: 350px;
   background-color: @color-gainsboro;
   background-repeat: no-repeat;
+  margin-top: 32px;
 }

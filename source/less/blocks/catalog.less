@@ -38,23 +38,9 @@
   @media (min-width: @desktop-width) {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: (267px);
     margin: 0 auto;
     padding: 0;
-  }
-}
-
-.catalog__item-group {
-  margin: 0;
-  padding: 0;
-
-  @media (min-width: @tablet-width) {
-    background-color: @color-white-smoke;
-  }
-
-  @media (min-width: @desktop-width) {
-    background-color: @color-black;
-    mix-blend-mode: normal;
-    opacity: 0.3;
   }
 }
 
@@ -65,6 +51,48 @@
   @media (min-width: @desktop-width) {
     color: @color-white;
   }
+}
+
+.catalog__item--main {
+  position: relative;
+  top: 7px;
+
+  @media (min-width: @desktop-width) {
+    top: 70px;
+  }
+}
+
+.catalog__item-photo {
+  object-fit: cover;
+  width: 100%;
+}
+
+.catalog__item-group {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 22px 20px 15px 20px;
+  padding-bottom: 15px;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: @color-white-smoke;
+  }
+
+  @media (min-width: @desktop-width) {
+    background-color: rgba(0, 0, 0, 0.3);
+    mix-blend-mode: normal;
+    position: relative;
+    top: -71px;
+    left: 0;
+    padding-bottom: 0;
+  }
+}
+
+.catalog__item-group-text {
+  display: flex;
+  flex-direction: column;
 }
 
 .catalog__item-title {
@@ -82,19 +110,45 @@
   }
 }
 
-.catalog__button {
-  background-image: url("../img/svg/like-icon.svg");
-  width: 23px;
-  height: 21px;
-  background-repeat: no-repeat;
-}
-
 .catalog__like {
+  position: relative;
   margin: 0;
   font-weight: 700;
+
+  @media (max-width: @mobile-width-only) {
+    margin-left: 30px;
+  }
 }
 
-.catalog__item-photo {
-  object-fit: cover;
-  width: 100%;
+.catalog__button {
+  position: absolute;
+  top: -4px;
+  left: -28px;
+  border: none;
+  background-repeat: no-repeat;
+  fill: @color-black;
+  opacity: 0.3;
+  cursor: pointer;
+
+  @media (min-width: @desktop-width) {
+    fill: @color-white;
+    opacity: 1;
+  }
+}
+
+.presentation__video-block {
+  position: relative;
+}
+
+.presentation__play-btn {
+  position: absolute;
+  top: 38%;
+  right: 47%;
+  background-image: url("../img/svg/catalog-btn.svg");
+  background-repeat: no-repeat;
+  width: 48px;
+  height: 52px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
 }

@@ -1,5 +1,8 @@
 .main-nav {
+  min-height: 56px;
+
   @media (min-width: @tablet-width) {
+    background-color: @color-white;
     display: flex;
   }
 }
@@ -8,6 +11,29 @@
   color: @color-black;
   font-weight: 700;
   text-decoration: none;
+  padding: 18px 18px;
+}
+
+.main-nav__link:hover {
+  color: @color-seagull;
+
+  @media (max-width: @mobile-width-only) {
+    background-color: @color-shakespeare;
+    color: @color-white;
+  }
+}
+
+.main-nav__link:active {
+  color: rgba(0, 0, 0, 0.3);
+
+  @media (max-width: @mobile-width-only) {
+    background-color: @color-shakespeare-down;
+    color: rgba(255, 255, 255, 0.3);
+  }
+}
+
+.main-nav__link:disabled {
+  cursor: default;
 }
 
 .main-nav__link--current {
@@ -23,11 +49,24 @@
   list-style: none;
   width: 100%;
 
-
   @media (min-width: @tablet-width) {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+  }
+}
+
+.main-nav__site-list a {
+  @media (max-width: @mobile-width-only) {
+    position: relative;
+    display: block;
+    padding-top: 17px;
+    padding-bottom: 12px;
+    font-size: 18px;
+    line-height: 26px;
+    color: @color-white;
+    border-top: 1px solid #ffffff33;
+    border-bottom: 1px solid #01010133;
   }
 }
 
@@ -47,8 +86,56 @@
   }
 }
 
-.main-nav__toggle {
-  @media (min-width: @tablet-width) {
-    display: none;
-  }
-}
+// .main-nav--closed .main-nav__toggle::before {
+//   content: "";
+//   position: absolute;
+//   right: 20%;
+//   top: 30%;
+//   width: 23px;
+//   height: 4px;
+//   background-color: #ffffff;
+//   box-shadow: 0 7px 0 0 #ffffff, 0 14px 0 0 #ffffff;
+// }
+
+// .main-nav--opened .main-nav__toggle {
+// top: 10;
+// right: 17;
+// left: auto;
+
+// &::before,
+// &::after {
+//   content: "";
+//   position: absolute;
+//   right: 20%;
+//   top: 60%;
+//   width: 23px;
+//   height: 2px;
+//   background-color: #ffffff;
+// }
+
+// &::before {
+//   transform: rotate(45deg);
+//   box-shadow: none;
+// }
+
+// &::after {
+//   transform: rotate(-45deg);
+// }
+
+//   &:active::before,
+//   &:active::after {
+//     background-color: fade(#ffffff, 30%);
+//   }
+// }
+
+// .main-nav--closed {
+//   @media (max-width: @mobile-width-only) {
+//     display: none;
+//   }
+// }
+
+// .main-nav--opened {
+//   @media (max-width: @mobile-width-only) {
+//     display: none;
+//   }
+// }

@@ -4,3 +4,60 @@
   line-height: 26px;
   text-transform: none;
 }
+
+.control__form {
+  position: relative;
+  display: block;
+}
+
+.control__mark {
+  position: absolute;
+  top: -10px;
+  left: -51px;
+  width: 46px;
+  height: 46px;
+  border: none;
+  border-radius: 25%;
+  background-color: @color-white-smoke;
+}
+
+.control__input[type="radio"] + .control__mark {
+  border-radius: 50%;
+}
+
+.control__input[type="radio"]:checked + .control__mark::before {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  width: 16px;
+  height: 16px;
+  background-color: @color-night-rider;
+  border-radius: 50%;
+  content: "";
+}
+
+.control__input[type="checkbox"]:checked + .control__mark::before {
+  position: absolute;
+  background-image: url("../img/svg/tick.svg");
+  background-repeat: no-repeat;
+  top: 15px;
+  left: 13px;
+  width: 23px;
+  height: 16px;
+  content: "";
+}
+
+.control__input[type="checkbox"]:hover + .control__mark,
+.control__input[type="radio"]:hover + .control__mark {
+  background-color: @color-button-whisper;
+}
+
+.control__input[type="checkbox"]:focus-visible + .control__mark,
+.control__input[type="radio"]:focus-visible + .control__mark {
+  outline: none;
+}
+
+.control__input[type="checkbox"]:active + .control__mark,
+.control__input[type="radio"]:active + .control__mark {
+  background: rgba(51, 51, 51, 0.3);
+}
