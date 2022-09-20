@@ -2,7 +2,35 @@
   background-image: url("../img/svg/visit-sedona.svg");
   background-repeat: no-repeat;
   height: 26px;
-  width: 166px;
+  width: 140px;
+  margin-bottom: 28px;
+
+  @media (min-width: @tablet-width) {
+    margin: 0 0 37px 21px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0 0 44px 0;
+  }
+}
+
+.footer__copyright {
+  display: flex;
+  min-width: 129px;
+
+  @media (min-width: @tablet-width) {
+    margin: 0 19px 33px 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0 -1px 43px 0;
+  }
+}
+
+.footer__copyright-svg {
+  position: relative;
+  top: -6px;
+  left: 13px;
 }
 
 .footer__wrapper {
@@ -11,6 +39,7 @@
   align-items: center;
   max-width: 960px;
   margin: 0 auto;
+  padding: 0 40px;
 
   @media (min-width: @tablet-width) {
     flex-direction: row;
