@@ -8,6 +8,27 @@
 .control__form {
   position: relative;
   display: block;
+  margin: 25px -4px -7px 23px;
+
+  @media (min-width: @tablet-width) {
+    margin: 0 0 1px 28px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0 -2px 0 65px;
+  }
+}
+
+.control__form-checkbox {
+  margin: 17px 0 0 -34px;
+
+  @media (min-width: @tablet-width) {
+    margin: 0 0 0 22px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0 -17px 0 52px;
+  }
 }
 
 .control__mark {
@@ -18,6 +39,7 @@
   height: 46px;
   border: none;
   border-radius: 25%;
+  margin: 0 0 0 -11px;
   background-color: @color-white-smoke;
 }
 

@@ -49,7 +49,7 @@
         <form class="page-form__form form" action="https://echo.htmlacademy.ru/" method="post">
           <div class="page-form__form-wrapper">
             <fieldset class="form__wrapper">
-              <legend class="form__title">Представьтесь:</legend>
+              <legend class="form__title form__title--name-user">Представьтесь:</legend>
               <ul class="form__list">
                 <li class="form__item form__item--text">
                   <label class="form__label" for="name-user">Имя*:</label>
@@ -67,13 +67,13 @@
                 </li>
               </ul>
             </fieldset>
-            <fieldset class="form__wrapper">
-              <legend class="form__title">Контактная информация:</legend>
+            <fieldset class="form__wrapper form__wrapper--user-phone">
+              <legend class="form__title form__title--user-phone">Контактная информация:</legend>
               <ul class="form__list">
                 <li class="form__item form__item--text">
                   <label class="form__label" for="user-phone">Контактный телефон*:</label>
                   <div class="form__input-wrapper form__input-wrapper--phone">
-                    <input class="form__field" type="text" id="user-phone" name="user-phone"
+                    <input class="form__field form__field--user-phone" type="text" id="user-phone" name="user-phone"
                       placeholder="Введите телефон">
                     <div class="form__input-icon form__input-phone-icon"></div>
                   </div>
@@ -81,16 +81,16 @@
                 <li class="form__item form__item--text">
                   <label class="form__label" for="user-mail">Электронная почта*:</label>
                   <div class="form__input-wrapper form__input-wrapper--mail">
-                    <input class="form__field" type="text" id="user-mail" name="user-mail" placeholder="Введите e-mail">
+                    <input class="form__field form__field--user-phone" type="text" id="user-mail" name="user-mail" placeholder="Введите e-mail">
                     <div class="form__input-icon form__input-mail-icon"></div>
                   </div>
                 </li>
               </ul>
             </fieldset>
           </div>
-          <fieldset class="form__wrapper">
-            <legend class="form__title">Ваше общее впечатление:</legend>
-            <ul class="form__list">
+          <fieldset class="form__wrapper form__wrapper-btn">
+            <legend class="form__title form__title--impression">Ваше общее впечатление:</legend>
+            <ul class="form__list form__list--form-radio">
               <li class="form__item control">
                 <label class="control__form">
                   <input class="control__input visually-hidden" type="radio" name="form-radio-group" value="positive"
@@ -116,31 +116,31 @@
             </ul>
           </fieldset>
           <fieldset class="form__wrapper">
-            <legend class="form__title">Посещенные <br> достопримечательности:</legend>
-            <ul class="form__list">
+            <legend class="form__title form__title--attraction">Посещенные <br> достопримечательности:</legend>
+            <ul class="form__list form__list--form-checkbox">
               <li class="form__item control">
-                <label class="control__form">
+                <label class="control__form control__form-checkbox">
                   <input class="control__input visually-hidden" type="checkbox" name="form-group" checked />
                   <span class="control__mark"></span>
                   <span class="control__label">Мост Дьявола</span>
                 </label>
               </li>
               <li class="form__item control">
-                <label class="control__form">
-                  <input class="control__input visually-hidden" type="checkbox" name="form-group" checked />
-                  <span class="control__mark"></span>
-                  <span class="control__label">Слайд-парк</span>
-                </label>
-              </li>
-              <li class="form__item control">
-                <label class="control__form">
+                <label class="control__form control__form-checkbox">
                   <input class="control__input visually-hidden" type="checkbox" name="form-group" checked />
                   <span class="control__mark"></span>
                   <span class="control__label">Гора-Колокол</span>
                 </label>
               </li>
               <li class="form__item control">
-                <label class="control__form">
+                <label class="control__form control__form-checkbox">
+                  <input class="control__input visually-hidden" type="checkbox" name="form-group" checked />
+                  <span class="control__mark"></span>
+                  <span class="control__label">Слайд-парк</span>
+                </label>
+              </li>
+              <li class="form__item control">
+                <label class="control__form control__form-checkbox">
                   <input class="control__input visually-hidden" type="checkbox" name="form-group" />
                   <span class="control__mark"></span>
                   <span class="control__label">Красные скалы</span>
@@ -148,9 +148,9 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset class="form__wrapper">
-            <legend class="form__title">Опишите свои эмоции:</legend>
-            <label class="form__label" for="user-comment"></label>
+          <fieldset class="form__wrapper form__wrapper--commit">
+            <legend class="form__title form__title--commit">Опишите свои эмоции:</legend>
+            <label class="form__label-commit" for="user-comment"></label>
             <textarea class="form__field form__field--textarea" id="user-comment" name="user-comment"
               placeholder="Опишите подробно все свои восторги">
           </textarea>
@@ -220,5 +220,6 @@
         </a>
       </div>
     </footer>
+    <script src="js/script.js"></script>
   </div>
 </body>

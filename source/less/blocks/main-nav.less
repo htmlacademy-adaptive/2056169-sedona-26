@@ -49,6 +49,23 @@
   list-style: none;
   width: 100%;
 
+  @media (max-width: @mobile-width-only) {
+    display: none;
+
+    .no-js &,
+    .is-open & {
+      display: block;
+      background-color: @color-seagull;
+    }
+
+    .is-open & {
+      position: absolute;
+      width: 100%;
+      top: 0;
+      left: 0;
+    }
+  }
+
   @media (min-width: @tablet-width) {
     display: flex;
     flex-wrap: wrap;
