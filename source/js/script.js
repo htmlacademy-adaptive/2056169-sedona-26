@@ -1,5 +1,20 @@
-const header = document.querySelector('.header');
-const toggleBtn = document.querySelector('.header__nav-toggle');
+let navMain = document.querySelector('.main-nav');
+let navToggle = document.querySelector('.main-nav__toggle');
+let map = document.querySelector('.map');
+let sedonaMap = document.querySelector('.sedona-map');
 
-header.classList.remove('no-js');
-toggleBtn.addEventListener('click', () => header.classList.toggle('is-open'));
+navMain.classList.remove('main-nav--nojs');
+
+
+navToggle.addEventListener('click', function () {
+  if (navMain.classList.contains('main-nav--closed')) {
+    navMain.classList.remove('main-nav--closed');
+    navMain.classList.add('main-nav--opened');
+  } else {
+    navMain.classList.add('main-nav--closed');
+    navMain.classList.remove('main-nav--opened');
+  }
+});
+
+map.classList.remove('map--nojs');
+sedonaMap.classList.remove('sedona-map--nojs');

@@ -1,0 +1,42 @@
+.checkbox-label__description {
+  text-transform: none;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.checkbox-label__mark {
+  display: none;
+}
+
+.checkbox-label__input:checked + .checkbox-label__control {
+  & .checkbox-label__mark {
+    display: block;
+  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.checkbox-label__control {
+  position: relative;
+  min-width: 46px;
+  height: 46px;
+  margin-right: 16px;
+  background: #f2f2f2;
+  border-radius: 4px;
+  cursor: pointer;
+
+  &:hover {
+    background: #e5e5e5;
+  }
+
+  &:active {
+    background: #d5d5d5;
+    fill: rgba(51, 51, 51, 0.3);
+  }
+}
+
+.checkbox-label {
+  align-items: center;
+}

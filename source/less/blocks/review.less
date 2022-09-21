@@ -1,0 +1,122 @@
+.review {
+  display: flex;
+  flex-direction: column;
+  padding: 36px 20px 0;
+
+  @media (min-width: @tablet-width) {
+    padding: 64px 60px 69px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 113px 120px 68px;
+  }
+}
+
+.review__title {
+  .title();
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 24px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 20px;
+    font-size: 30px;
+    line-height: 26px;
+
+    @media (min-width: @desktop-width) {
+      margin-bottom: 30px;
+    }
+  }
+}
+
+.review__description {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 28px;
+
+  @media (min-width: @tablet-width) {
+    line-height: 24px;
+    width: 435px;
+    margin: 0 auto 102px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0 auto 67px;
+  }
+}
+
+.review__form {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+  }
+}
+
+.review__group {
+  border: none;
+  position: relative;
+}
+
+.review__button {
+  margin-bottom: 3px;
+  width: 280px;
+  padding: 19px 34px 13px 32px;
+  color: #ffffff;
+  border: none;
+  background: #81b3d2;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  text-transform: uppercase;
+  .ptsans();
+  cursor: pointer;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 0;
+    width: 324px;
+    min-height: 58px;
+    padding: 19px 40px 13px 32px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 384px;
+    margin-left: 96px;
+    padding: 18px 45px 13px 32px;
+  }
+
+  &:hover {
+    background: #669ec0;
+  }
+
+  &:active {
+    background: #5496bd;
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &:disabled {
+    background: #e5e5e5;
+  }
+}
+
+.review__legend {
+  font-size: 12px;
+  margin-top: 0;
+  margin-bottom: 24px;
+  text-align: end;
+
+  @media (min-width: @tablet-width) {
+    margin-left: auto;
+    display: flex;
+    padding-top: 24px;
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+
+  @media (min-width: @desktop-width) {
+
+    margin-right: 96px;
+  }
+}
