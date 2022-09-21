@@ -1,5 +1,31 @@
-.copyright-link {
-  color: @color-black;
-  text-decoration: none;
-  text-transform: uppercase;
+.copyright {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.copyright__description {
+  margin-right: 12px;
+  padding: 7px 0 6px;
+}
+
+.copyright__image {
+  display: block;
+}
+
+.copyright__link {
+  display: flex;
+  color: #000000;
+
+  @media (min-width: @desktop-width) {
+    padding-top: 3px;
+  }
+
+  &:hover {
+    color: #81b3d2;
+  }
+
+  &:active {
+    color: #b3b3b3;
+  }
 }
